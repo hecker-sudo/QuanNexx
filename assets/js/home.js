@@ -20,6 +20,10 @@ function updateClock() {
     let hours = now.getHours();
     const minutes = now.getMinutes().toString().padStart(2, '0');
     const seconds = now.getSeconds().toString().padStart(2, '0');
+    const milliseconds = now.getMilliseconds().toString().padStart(2,'0');
+    const date = now.getDate().toString().padStart(2,'0');
+    const year = now.getFullYear().toString().padStart(2,'0');
+    const month = now.getMonth().toString().padStart(2,'0')
 
     if (hours > 12) {
         hours -= 12;
@@ -28,12 +32,12 @@ function updateClock() {
         hours = 12;
     }
 
-    const timeString = `${hours}:${minutes}:${seconds}`;
+    const timeString = `${hours}:${minutes}:${seconds}:${milliseconds} | ${month}-${date}-${year}`;
     document.getElementById('time').textContent = timeString;
 }
 
 updateClock();
-setInterval(updateClock, 1000);
+setInterval(updateClock, 10);
 
 
 const options = [

@@ -1,3 +1,5 @@
+import Ultraviolet from 'ultraviolet-library'; // Example import statement
+
 const urlBar = document.querySelector("#urlBar")
 const siteUrl = document.querySelector("#siteurl");
 const urlInput = document.querySelector("#urlInput");

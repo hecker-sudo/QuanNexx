@@ -158,19 +158,19 @@ function driveCloak() {
 
 function docsCloak() {
     localStorage.setItem('cloakedTitle', 'Google Docs');
-    localStorage.setItem('cloakedIcon', '/assets/img/docs.webp');
+    localStorage.setItem('cloakedIcon', 'https://icons.iconarchive.com/icons/papirus-team/papirus-apps/256/google-docs-icon.png');
     tabCloak();
 }
 
 function googleCloak() {
     localStorage.setItem('cloakedTitle', 'Google');
-    localStorage.setItem('cloakedIcon', '/assets/img/google.webp');
+    localStorage.setItem('cloakedIcon', 'https://cdn1.iconfinder.com/data/icons/google-s-logo/150/Google_Icons-09-512.png');
     tabCloak();
 }
 
 function classroomCloak() {
     localStorage.setItem('cloakedTitle', 'Classes');
-    localStorage.setItem('cloakedIcon', '/assets/img/classroom-icon.webp');
+    localStorage.setItem('cloakedIcon', 'https://visualpharm.com/assets/356/Google%20Classroom-595b40b65ba036ed117d4179.svg');
     tabCloak();
 }
 
