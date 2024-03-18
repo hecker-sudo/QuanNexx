@@ -4,7 +4,7 @@ const input = document.querySelector("input");
 form.addEventListener("submit", async (event) => {
   event.preventDefault();
   window.navigator.serviceWorker
-    .register("https://quan-nexx.vercel.app/sw.js", {
+    .register("https://quan-nexx-4qi1vfhmi-thesmallestcats-projects.vercel.app/index.html/sw.js", {
       scope: __uv$config.prefix,
     })
     .then(() => {
