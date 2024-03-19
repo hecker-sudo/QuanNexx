@@ -10,7 +10,7 @@
 #urlBar {
     display: flex;
     align-items: center;
-    background-color: transparent;
+    background-color: black;
     padding: 8px;
     position: fixed;
     top: 0;

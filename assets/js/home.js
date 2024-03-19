@@ -18,12 +18,12 @@ loadScript('/dist/uv.handler.js', function () {
 function updateClock() {
     const now = new Date();
     let hours = now.getHours();
+    let month = now.getMonth() + 1;
     const minutes = now.getMinutes().toString().padStart(2, '0');
     const seconds = now.getSeconds().toString().padStart(2, '0');
     const milliseconds = now.getMilliseconds().toString().padStart(2,'0');
     const date = now.getDate().toString().padStart(2,'0');
     const year = now.getFullYear().toString().padStart(2,'0');
-    const month = now.getMonth().toString().padStart(2,'0')
 
     if (hours > 12) {
         hours -= 12;
@@ -50,6 +50,14 @@ const options = [
     "Quantum Physics is highly important!",
     "© Copyright 2024 QuanNex Network. All Rights Reserved.",
     "Customize QuanNex by going to Setttings>Themes",
+    "Automatically changing time and date",
+    "Please don't use our website for illegal activities.",
+    "Please support us on discord",
+    "Support Anonymous Hacking Group!",
+    "We support Human Rights and Privacy",
+    "Privacy is our number one priority!",
+    
+
 ];
 
 function getRandomOption() {
